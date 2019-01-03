@@ -1,11 +1,12 @@
 import numpy as np
-import cv2
+import cv2,sys
 from matplotlib import pyplot as plt
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 def read_image(str):
+    #print (str)
     img = cv2.imread(str)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -36,7 +37,10 @@ def read_image(str):
         #textfile=open("horizontal_record.txt","w")
         #textfile.write('%s' %x)
         #textfile.close()
-
+        #key = cv2.waitKey(1) & 0xFF
+        #if key == ord("q"):
+            #sys.exit()
+            #break
         #cv2.imshow('img',img)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
