@@ -1,0 +1,10 @@
+#!/usr/bin/python3.6
+[Desktop Entry]
+Name=Cam Security
+Version=1.0
+Icon=/home/abhijit/atom_projects/cam_sec.jpg
+
+Exec=python3 /home/abhijit/atom_projects/launch_window.py
+#Exec=python3 /home/abhijit/atom_projects/registration_box.py
+Terminal=true
+Type=Application

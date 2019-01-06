@@ -2,9 +2,9 @@ import tkinter as tk
 from subprocess import call
 def start():
     """Enable scanning by setting the global flag to True."""
-    exec_code=call("python3 app_launcher.py",shell=True)
+    exec_code=call("python3 /home/abhijit/atom_projects/app_launcher.py",shell=True)
     root.destroy()
-    exec_code=call("python3 window_main.py",shell=True)
+    exec_code=call("python3 /home/abhijit/atom_projects/window_main.py",shell=True)
 
 root = tk.Tk()
 frame = tk.Frame(root)
@@ -13,7 +13,7 @@ root.title("Control Panel")
 root.geometry('350x400')
 def sign():
     root.destroy()
-    exec_code=call("python3 registration_box.py",shell=True)
+    exec_code=call("python3 /home/abhijit/atom_projects/registration_box.py",shell=True)
 
 button = tk.Button(frame,
                    text="QUIT",

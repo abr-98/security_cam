@@ -3,11 +3,11 @@ from subprocess import call
 
 
 def exec_display_frames():
-    exit_code = call("python3 caller.py", shell=True)
+    exit_code = call("python3 /home/abhijit/atom_projects/caller.py", shell=True)
     display_frames.config(state="disabled")
 
 def exec_display_screen():
-    exit_code = call("python3 caller_screens.py", shell=True)
+    exit_code = call("python3 /home/abhijit/atom_projects/caller_screens.py", shell=True)
     display_screens.config(state="disabled")
 
 root = tk.Tk()

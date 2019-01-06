@@ -11,6 +11,7 @@ c=0
 def get_value():
     try:
         mytime=int(timer.get())
+        #print(mytime)
     except:
          messagebox.showerror(
                  "Input NOT valid.",
@@ -19,7 +20,7 @@ def get_value():
 
     #t=''.join(counter)
     #time=int(t)
-    #time=time*1000
+    #mytime=mytime*1000
     start.config(state="normal")
     stop.config(state="normal")
 def exec_cam_capture():
@@ -29,8 +30,8 @@ def exec_cam_capture():
     if running:
         t2= int(round(time.time()))
         if t2-t1==mytime:
-           exit_code = call("python3 test_capture.py", shell=True)
-    root.after(mytime,exec_cam_capture)
+           exit_code = call("python3 /home/abhijit/atom_projects/test_capture.py", shell=True)
+    root.after(3000,exec_cam_capture)
 
 
 
@@ -39,7 +40,7 @@ def stop():
     global running
     running = False
     root.destroy()
-    exit_code=call("python3 main_control.py",shell=True)
+    exit_code=call("python3 /home/abhijit/atom_projects/main_control.py",shell=True)
     #exec_cam_capture()
 
 def start():

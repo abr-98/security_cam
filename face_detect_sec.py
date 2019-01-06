@@ -2,8 +2,8 @@ import numpy as np
 import cv2,sys
 from matplotlib import pyplot as plt
 
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('/home/abhijit/atom_projects/haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('/home/abhijit/atom_projects/haarcascade_eye.xml')
 
 def read_image(str):
     #print (str)
