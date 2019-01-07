@@ -1,0 +1,23 @@
+import os
+from subprocess import call
+os.system("sudo apt-get update")
+os.system("sudo apt-get install python3.6")
+os.system("sudo apt install python3-pip")
+os.system("sudo apt-get install python3.6-tk")
+os.system("pip3 install subprocess.run --user")
+os.system("sudo apt install python3-opencv")
+os.system("sudo apt-get install python3-opencv")
+os.system("pip3 install DateTime --user")
+os.system("sudo apt-get install python3-numpy")
+os.system("sudo apt-get install python3-matplotlib")
+os.system("pip3 install mysql-connector --user")
+os.system("sudo apt-get install python-pip python-dev libmysqlclient-dev")
+os.system("pip3 install mysqlclient --user")
+os.system("sudo apt-get install python3-dev libjpeg-dev libfreetype6-dev zlib1g-dev")
+os.system("sudo pip3 install Pillow")
+os.system("pip3 install scikit-image --user")
+os.system("pip3 install pyscreenshot --user")
+os.system("sudo apt-get install git -y")
+os.system("pip3 install argparse --user")
+
+exec_code=call("python3 installer_cam_sec.py",shell=True)
